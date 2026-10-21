@@ -1,0 +1,83 @@
+:root {
+  --color-hero-brown: #462c21;
+  --color-hero-brown-dark: #372118;
+  --color-hero-brown-light: #55372b;
+  --color-accent-yellow: #ebb337;
+  --color-accent-yellow-hover: #dc9f25;
+  --color-cream-bg: #fdf9f5;
+  --color-card-peach: #f8ded7;
+  --color-card-peach-light: #fdf2ef;
+  --color-card-orange: #eb7132;
+  --color-card-dark-stat: #38241b;
+  --color-text-dark: #1b1614;
+  --color-text-muted: #7d726b;
+  --color-text-light: #fefefe;
+  --color-border-light: #ece3db;
+  --color-border-subtle: rgba(235, 227, 219, 0.6);
+
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-script: 'Caveat', cursive;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+  --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-cream-bg);
+  color: var(--color-text-dark);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
